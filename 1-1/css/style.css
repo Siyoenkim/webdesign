@@ -1,0 +1,87 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.clearfix::before, .clearfix::after {
+    display: block; content: ''; clear: both;
+}
+/* layout */
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+    height: 1000px;
+ 
+}
+#header {
+
+}
+#banner {
+    
+}
+#content1 {
+    background-color: rgb(85, 215, 232);
+}
+#content2 {
+    background-color: rgb(53, 213, 234);
+}
+#footer {
+    background-color: rgb(13, 202, 226);
+}
+
+/* header */
+#header h1 {
+    float: left;
+}
+#header h1 img{
+    width: 130px;
+}
+#header .nav {
+    float: right;
+}
+/* 플롯을 쓰면 구조가 깨지기 때문에(=하이트값이 0됨) HTML의 해당부분에 클리어픽스(=header) */
+/* clearfix : 플롯으로 인해 깨진 영역을 잡아주기 위한 속성. 상위(부모)박스에 넣어준다. */
+#header .nav ul {}
+#header .nav li {
+    float: left;
+}
+/* li한테도 플룻방식을 주었기 때문에 li의 부모박스인 ul에게도 clearfix를 준다. */
+#header .nav li a {
+    display: block;
+    padding: 40px 20px;
+}
+/* inline은 각 요소를 모아 한줄로
+   block은 스스로 혼자 한줄 
+   inline block은 block처럼되지만 상하좌우 간격지정 가능*/
+
+/* banner */
+#banner {}
+#banner img {
+    width: 100%;
+}
+
+/* content1 */
+#content1 {
+    margin-top: 15px;
+}
+#content1 .notice {
+    float: left;
+    width: 49%;
+    height: 300px;
+    background-color: red;
+    margin-right: 2%;
+}
+#content1 .ad {
+    float: left;
+    width: 49%;
+    height: 300px;
+    background-color: #cacaca;
+    margin-right: 0;
+}

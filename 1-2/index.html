@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            font-size: 25px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+        }
+        .header img{
+           width: 60%;
+        }
+        .list {
+            margin-top: 30px;
+        }
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .banner img{
+            width: 100%;
+        }
+        .cont {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header container">
+            <div>
+                <h1><img src="images/logo.jpg"></h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>COOKIT소개</li>
+                    <li>COOKIT메뉴</li>
+                    <li>COOKIT리뷰</li>
+                    <li>COOKIT이벤트</li>
+                    <li>COOKITMY쿡킷</li>
+                </ul>
+            </div>
+        </div>
+        <!-- header -->
+
+        <div class="banner container">
+            <div>
+                <img src="images/banner01.jpg" alt="배너이미지">
+            </div>
+        </div>
+        <!-- banner -->
+
+        <div class="cont container">
+            <div class="cont__right">
+                <h2>우리집도 COOKIT 배송이 되나요?</h2>
+                <p>배송이 가능한지 알려드려요</p>
+                <p><img src="images/icon1.jpg" alt="">배송지 검색</p>
+            </div>
+            <div class="cont__left">
+                <h2>7월 30일(화)에 받을 수 있어요</h2>
+                <p>오전 7시까지 주문하시면 다음날 배송됩니다.</p>
+            </div>
+        </div>
+        <!-- cont box -->
+
+        <div class="cont__best container">
+            <h2>실시간 베스트 | 생생한 리뷰</h2>
+        </div>
+
+        <div class="food container">
+            <div class="food__img1">
+                <img src="images/best1.jpg" alt="추천음식1">
+            </div>
+            <div class="food__img2">
+                <img src="images/best2.jpg" alt="추천음식1">
+            </div>
+            <div class="food__img3">
+                <img src="images/best3.jpg" alt="추천음식1">
+            </div>
+        </div>
+        <!-- cont -->
+        <div class="footer"></div>
+        <!-- footer -->
+    </div>
+    
+</body>
+</html>
